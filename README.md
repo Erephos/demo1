@@ -1,2 +1,2 @@
 # NOMBRE DE INTEGRANTES 
-- Genesis Lozada Escobar
+- **Ximena Lozada Escobar**
