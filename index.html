@@ -1,1 +1,97 @@
-<h1>holuuu bebe</h1>
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Huellitas Felices - Veterinaria</title>
+    
+    <!-- Tailwind CSS (Librería de estilos rápidos) -->
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+    <!-- FontAwesome (Iconos) -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
+    <!-- CONEXIÓN MANUAL CON EL ARCHIVO CSS -->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body class="bg-teal-50 text-gray-700 font-sans m-0 p-0">
+
+  <div class="app-container">
+    
+    <!-- Navegación -->
+    <nav class="bg-white shadow-md p-4 flex justify-between items-center fixed w-full top-0 z-50">
+      <div class="text-2xl font-bold text-teal-500 flex items-center gap-2">
+        <i class="fa-solid fa-paw"></i> Huellitas Felices
+      </div>
+      <ul class="hidden md:flex gap-6 font-semibold text-gray-600">
+        <li class="hover:text-teal-500 cursor-pointer transition">Inicio</li>
+        <li class="hover:text-teal-500 cursor-pointer transition">Servicios</li>
+        <li class="hover:text-teal-500 cursor-pointer transition">Pacientes</li>
+      </ul>
+      <button id="btn-cita" class="bg-teal-500 text-white px-5 py-2 rounded-full font-bold hover:bg-teal-600 transition shadow-lg cursor-pointer">
+        Agendar Cita
+      </button>
+    </nav>
+
+    <!-- Hero Section -->
+    <header class="hero-section mt-16 flex flex-col items-center justify-center text-center p-10 min-h-[70vh]">
+      <h1 class="text-5xl font-extrabold text-teal-800 mb-4 drop-shadow-md">
+        Cuidamos a tu mejor amigo <br>como si fuera nuestro
+      </h1>
+      <p class="text-lg text-teal-900 mb-8 max-w-2xl">
+        Atención veterinaria de primera calidad con muchísimo amor. Especialistas en perros, gatos y animalitos exóticos.
+      </p>
+      <button class="bg-orange-400 text-white px-8 py-3 rounded-full text-xl font-bold hover:bg-orange-500 transition-transform transform hover:scale-105 shadow-xl cursor-pointer">
+        ¡Conócenos!
+      </button>
+    </header>
+
+    <!-- Sección de Servicios -->
+    <section class="p-10 bg-white">
+      <h2 class="text-3xl font-bold text-center text-teal-600 mb-10">Nuestros Servicios Mágicos</h2>
+      <div class="grid grid-cols-1 md:grid-cols-3 gap-8 max-w-6xl mx-auto">
+        
+        <div class="service-card bg-teal-50 p-6 rounded-2xl text-center border-b-4 border-teal-300">
+          <div class="text-5xl text-teal-500 mb-4"><i class="fa-solid fa-stethoscope"></i></div>
+          <h3 class="text-xl font-bold mb-2">Consulta General</h3>
+          <p class="text-gray-600">Revisiones completas para asegurar que tu peludito esté sano y fuerte.</p>
+        </div>
+
+        <div class="service-card bg-orange-50 p-6 rounded-2xl text-center border-b-4 border-orange-300">
+          <div class="text-5xl text-orange-400 mb-4"><i class="fa-solid fa-syringe"></i></div>
+          <h3 class="text-xl font-bold mb-2">Vacunación</h3>
+          <p class="text-gray-600">Protección contra enfermedades con el calendario de vacunas al día.</p>
+        </div>
+
+        <div class="service-card bg-purple-50 p-6 rounded-2xl text-center border-b-4 border-purple-300">
+          <div class="text-5xl text-purple-400 mb-4"><i class="fa-solid fa-bath"></i></div>
+          <h3 class="text-xl font-bold mb-2">Spa y Peluquería</h3>
+          <p class="text-gray-600">Baños relajantes y cortes de pelo para que se vean súper guapos.</p>
+        </div>
+        
+      </div>
+    </section>
+
+    <!-- Galería de Pacientes -->
+    <section class="p-10 bg-gray-50 text-center pb-20">
+      <h2 class="text-3xl font-bold text-teal-600 mb-6">Pacientes Felices</h2>
+      
+      <div class="flex justify-center gap-4 mb-8">
+        <button class="filter-btn active bg-teal-500 text-white px-4 py-2 rounded-lg font-bold cursor-pointer" data-filter="all">Todos</button>
+        <button class="filter-btn bg-gray-200 text-gray-700 hover:bg-teal-100 px-4 py-2 rounded-lg font-bold cursor-pointer" data-filter="dogs">Perritos</button>
+        <button class="filter-btn bg-gray-200 text-gray-700 hover:bg-teal-100 px-4 py-2 rounded-lg font-bold cursor-pointer" data-filter="cats">ximenita</button>
+      </div>
+
+      <div class="grid grid-cols-2 md:grid-cols-4 gap-4 max-w-4xl mx-auto" id="gallery">
+        <img src="https://images.unsplash.com/photo-1543466835-00a7907e9de1?auto=format&fit=crop&w=300&q=80" alt="Perro" class="gallery-item dogs rounded-xl shadow-md object-cover w-full h-48">
+        <img src="https://images.unsplash.com/photo-1514888286974-6c03e2ca1dba?auto=format&fit=crop&w=300&q=80" alt="Gato" class="gallery-item cats rounded-xl shadow-md object-cover w-full h-48">
+        <img src="https://images.unsplash.com/photo-1583337130417-3346a1be7dee?auto=format&fit=crop&w=300&q=80" alt="Perro" class="gallery-item dogs rounded-xl shadow-md object-cover w-full h-48">
+        <img src="https://images.unsplash.com/photo-1513360371669-4adf3dd7dff8?auto=format&fit=crop&w=300&q=80" alt="Gato" class="gallery-item cats rounded-xl shadow-md object-cover w-full h-48">
+      </div>
+    </section>
+
+  </div>
+
+  <!-- CONEXIÓN MANUAL CON EL ARCHIVO JS (Al final del body) -->
+  <script src="script.js"></script>
+</body>
+</html>
