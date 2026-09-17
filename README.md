@@ -1,3 +1,3 @@
 # NOMBRE DE INTEGRANTES 
-- Genesis Lozada Escobar
-- Edgar Angulo Nolorbe
+- **Ximena Lozada Escobar**
+- **Edgar Angulo Nolorbe**
