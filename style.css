@@ -1,0 +1,35 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@400;600;700;800&display=swap');
+
+body {
+  font-family: 'Nunito', sans-serif;
+  background-color: #f0fdfa;
+}
+
+.hero-section {
+  background-image: radial-gradient(#ccfbf1 2px, transparent 2px);
+  background-size: 30px 30px;
+  background-color: #e0f2fe;
+}
+
+.service-card {
+  transition: all 0.3s ease;
+  cursor: pointer;
+}
+
+.service-card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1), 0 10px 10px -5px rgba(0, 0, 0, 0.04);
+}
+
+.gallery-item {
+  transition: opacity 0.4s ease, transform 0.4s ease;
+}
+
+.gallery-item:hover {
+  transform: scale(1.05);
+}
+
+.hide {
+  display: none;
+  opacity: 0;
+}
